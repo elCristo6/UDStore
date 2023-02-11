@@ -12,11 +12,11 @@ function App() {
     <header className = "row">
         
         <div>
-            <a className = "estiloLogo" href="/">UDElectronics.net</a>
+            <img className="logo" src="/img/logoUD.png" alt='logoUD'/>
         </div>
         <div>
-            <a href="/cart">Ingresa</a>
-            <a href="/signin">Carrito</a>
+            <a className = "ingresaStyle"href="/cart">Ingresa</a>
+            <a href="/signin"><img className="carrito" src="/img/carrito.png" alt='logoUD'/></a>
         </div>
     </header>
     
@@ -26,7 +26,7 @@ function App() {
                 {
                      data.products.map(product =>(
                         <div key={product._id} className="card">
-                            <a href = {`/product/${product._id}`}>
+                            <a href =    {`/product/${product._id}`}>
                             <img className="medium" src={product.image} alt={product.name}/>
                             </a>
 
